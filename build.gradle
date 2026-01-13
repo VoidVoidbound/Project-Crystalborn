@@ -32,8 +32,6 @@ minecraft {
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
     mappings channel: mapping_channel, version: mapping_version
-//    mappings channel: 'official', version: '1.20.1'
-
 
     // When true, this property will have all Eclipse/IntelliJ IDEA run configurations run the "prepareX" task for the given run configuration before launching the game.
     // In most cases, it is not necessary to enable.
@@ -87,7 +85,6 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
-//            args '--mixin.config=tacz.mixins.json'
         }
 
         server {
@@ -124,7 +121,6 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-    maven { url "https://maven.modrinth.com" }
     maven {
         // location of the maven that hosts JEI files since January 2023
         name = "Jared's maven"
@@ -145,13 +141,12 @@ dependencies {
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
+
     // compile against the JEI API but do not include it at runtime
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
     // at runtime, use the full JEI jar for Forge
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
-
-//    implementation fg.deobf(files("libs/TACZero-1.20.1.jar"))
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
@@ -213,7 +208,9 @@ publishing {
         }
     }
     repositories {
-        maven {url "file://${project.projectDir}/mcmodsrepo" }
+        maven {
+            url "file://${project.projectDir}/mcmodsrepo"
+        }
     }
 }
 

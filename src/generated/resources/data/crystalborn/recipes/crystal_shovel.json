@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "crystalborn:crystal_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "C",
+    "S",
+    "S"
+  ],
+  "result": {
+    "item": "crystalborn:crystal_shovel"
+  },
+  "show_notification": true
+}

@@ -5,8 +5,9 @@ package com.voidbound.crystalborn;
 //import com.voidbound.crystalborn.fluid.ModFluidTypes;
 //import com.voidbound.crystalborn.fluid.ModFluids;
 import com.mojang.logging.LogUtils;
-//import com.voidbound.crystalborn.item.ModItems;
-//import com.voidbound.crystalborn.item.ModCreativeModeTabs;
+//import com.voidbound.crystalborn.ModItems.ModItems;
+import com.voidbound.crystalborn.ModItems.ModCreativeModeTabs;
+import com.voidbound.crystalborn.ModItems.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,13 +29,24 @@ public class crystalborn {
     public crystalborn(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
-//        ModCreativeModeTabs.register(modEventBus);
-//
-//        ModEntities.ENTITIES.register(modEventBus);
-//        ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
 //        ModBlocks.register(modEventBus);
-//        ModFluidTypes.REGISTRY.register(modEventBus);
-//        ModFluids.REGISTRY.register(modEventBus);
+
+//        ModLootModifiers.register(modEventBus);
+//        ModVillagers.register(modEventBus);
+
+//        ModSounds.register(modEventBus);
+//        ModEntities.register(modEventBus);
+
+//        ModBlockEntities.register(modEventBus);
+//        ModMenuTypes.register(modEventBus);
+
+//        ModRecipes.register(modEventBus);
+
+//        ModTrunkPlacerTypes.register(modEventBus);
+//        ModFoliagePlacers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
