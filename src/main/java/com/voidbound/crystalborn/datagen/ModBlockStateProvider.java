@@ -1,5 +1,6 @@
 package com.voidbound.crystalborn.datagen;
 
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
@@ -24,7 +25,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-//        blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+        blockWithItem(ModBlocks.VOID_CRYSTAL);
+        blockWithItem(ModBlocks.TERRA_CRYSTAL);
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.CRACKED_OBSIDIAN.get()), blockTexture(ModBlocks.CRACKED_OBSIDIAN.get()),
+                new ResourceLocation(crystalborn.MOD_ID, "block/cracked_obsidian_top"));
+
+        blockItem(ModBlocks.VOID_CRYSTAL);
+        blockItem(ModBlocks.TERRA_CRYSTAL);
+        blockItem(ModBlocks.CRACKED_OBSIDIAN);
 //        blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
 //
 //        blockWithItem(ModBlocks.SAPPHIRE_ORE);

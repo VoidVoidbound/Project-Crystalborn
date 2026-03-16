@@ -1,1 +1,4 @@
-// 1.20.1	2026-01-13T14:07:22.9184181	Tags for minecraft:block mod id crystalborn
+// 1.20.1	2026-03-13T10:03:28.8905896	Tags for minecraft:block mod id crystalborn
+7d063b4998632b6f467d5a2cd8e6d7724557e9f9 data/minecraft/tags/blocks/mineable/pickaxe.json
+300e7a8c3993f17a245fe1799584c933b6a124a5 data/minecraft/tags/blocks/needs_diamond_tool.json
+24bdbd6c3b5a3094dfc3301f77e4fe3ddb866daa data/minecraft/tags/blocks/needs_iron_tool.json

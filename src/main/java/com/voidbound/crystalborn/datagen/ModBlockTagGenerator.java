@@ -1,5 +1,6 @@
 package com.voidbound.crystalborn.datagen;
 
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -7,8 +8,6 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import com.voidbound.crystalborn.crystalborn;
-//import com.voidbound.crystalborn.ModBlocks.ModBlocks;
-import com.voidbound.crystalborn.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -23,22 +22,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 //        this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
 //                .add(ModBlocks.SAPPHIRE_ORE.get()).addTags(Tags.Blocks.ORES);
 
-//        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-//                .add(ModBlocks.SAPPHIRE_BLOCK.get(),
-//                        ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
-//                        ModBlocks.SAPPHIRE_ORE.get(),
-//                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
-//                        ModBlocks.NETHER_SAPPHIRE_ORE.get(),
-//                        ModBlocks.END_STONE_SAPPHIRE_ORE.get(),
-//                        ModBlocks.SOUND_BLOCK.get()
-//                        );
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.VOID_CRYSTAL.get(),
+                        ModBlocks.TERRA_CRYSTAL.get(),
+                        ModBlocks.CRACKED_OBSIDIAN.get()
+                        );
 
 
-//        this.tag(BlockTags.NEEDS_IRON_TOOL)
-//                .add(ModBlocks.SAPPHIRE_BLOCK.get());
-//
-//        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-//                .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.TERRA_CRYSTAL.get(),
+                ModBlocks.VOID_CRYSTAL.get());
+
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.CRACKED_OBSIDIAN.get());
 //
 //        this.tag(BlockTags.NEEDS_STONE_TOOL)
 //                .add(ModBlocks.NETHER_SAPPHIRE_ORE.get());

@@ -1,5 +1,6 @@
 package com.voidbound.crystalborn.ModItems;
 
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import com.voidbound.crystalborn.crystalborn;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -38,6 +39,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CRACKED_OBSIDIAN_AXE.get());
                         pOutput.accept(ModItems.CRACKED_OBSIDIAN_SHOVEL.get());
                         pOutput.accept(ModItems.CRACKED_OBSIDIAN_HOE.get());
+
+                        pOutput.accept(ModBlocks.CRACKED_OBSIDIAN.get());
+                        pOutput.accept(ModBlocks.VOID_CRYSTAL.get());
+                        pOutput.accept(ModBlocks.TERRA_CRYSTAL.get());
                     })
                     .build());
 

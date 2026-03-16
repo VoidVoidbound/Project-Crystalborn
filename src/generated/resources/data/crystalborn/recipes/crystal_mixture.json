@@ -13,6 +13,12 @@
     },
     {
       "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "crystalborn:void_crystal"
+    },
+    {
+      "item": "crystalborn:terra_crystal"
     }
   ],
   "result": {

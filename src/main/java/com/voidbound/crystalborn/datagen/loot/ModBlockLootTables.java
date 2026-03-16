@@ -1,5 +1,6 @@
 package com.voidbound.crystalborn.datagen.loot;
 
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -19,18 +20,18 @@ import net.minecraftforge.registries.RegistryObject;
 //import net.voidbound.tutorialmod.block.custom.StrawberryCropBlock;
 import com.voidbound.crystalborn.ModItems.ModItems;
 
-//import java.util.Set;
-//
-//public class ModBlockLootTables extends BlockLootSubProvider {
-//    public ModBlockLootTables() {
-//        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
-//    }
-//
-//    @Override
-//    protected void generate() {
-//        this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
-//        this.dropSelf(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
-//        this.dropSelf(ModBlocks.SOUND_BLOCK.get());
+import java.util.Set;
+
+public class ModBlockLootTables extends BlockLootSubProvider {
+    public ModBlockLootTables() {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+    }
+
+    @Override
+    protected void generate() {
+        this.dropSelf(ModBlocks.VOID_CRYSTAL.get());
+        this.dropSelf(ModBlocks.CRACKED_OBSIDIAN.get());
+        this.dropSelf(ModBlocks.TERRA_CRYSTAL.get());
 
 //        this.add(ModBlocks.SAPPHIRE_ORE.get(),
 //                block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
@@ -40,7 +41,7 @@ import com.voidbound.crystalborn.ModItems.ModItems;
 //                block -> createCopperLikeOreDrops(ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
 //        this.add(ModBlocks.END_STONE_SAPPHIRE_ORE.get(),
 //                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
-
+//
 //        this.dropSelf(ModBlocks.SAPPHIRE_STAIRS.get());
 //        this.dropSelf(ModBlocks.SAPPHIRE_BUTTON.get());
 //        this.dropSelf(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
@@ -68,11 +69,11 @@ import com.voidbound.crystalborn.ModItems.ModItems;
 //                .or(LootItemBlockStatePropertyCondition
 //                        .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
 //                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8)));
-
-        // LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
-        //         .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
-        //         .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8));
-
+//
+//         LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+//                 .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+//                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8));
+//
 //        this.add(ModBlocks.CORN_CROP.get(), createCropDrops(ModBlocks.CORN_CROP.get(), ModItems.CORN.get(),
 //                ModItems.CORN_SEEDS.get(), lootitemcondition$builder2));
 //
@@ -100,19 +101,19 @@ import com.voidbound.crystalborn.ModItems.ModItems;
 //                createSingleItemTable(ModItems.PINE_HANGING_SIGN.get()));
 //
 //        this.dropSelf(ModBlocks.PINE_SAPLING.get());
-//
-//    }
-//
-//    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
-//        return createSilkTouchDispatchTable(pBlock,
-//                this.applyExplosionDecay(pBlock,
-//                        LootItem.lootTableItem(item)
-//                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
-//                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
-//    }
-//
-//    @Override
-//    protected Iterable<Block> getKnownBlocks() {
-//        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
-//    }
-//}
+
+    }
+
+    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    @Override
+    protected Iterable<Block> getKnownBlocks() {
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+}

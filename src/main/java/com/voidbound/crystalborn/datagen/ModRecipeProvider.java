@@ -1,5 +1,6 @@
 package com.voidbound.crystalborn.datagen;
 
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
@@ -21,10 +22,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //    private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_SAPPHIRE.get(),
 //            ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHER_SAPPHIRE_ORE.get(),
 //            ModBlocks.END_STONE_SAPPHIRE_ORE.get());
-//    private static final List<ItemLike> OBSIDIANBLASTABLES = List.of(Blocks.OBSIDIAN.asItem()
-//    );
-private static final List<ItemLike> CRYSTALMIXTURES = List.of(ModItems.CRYSTAL_MIXTURE.get()
-);
+    private static final List<ItemLike> OBSIDIANBLASTABLES = List.of(Blocks.OBSIDIAN.asItem()
+    );
+    private static final List<ItemLike> CRYSTALMIXTURES = List.of(ModItems.CRYSTAL_MIXTURE.get()
+    );
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -35,7 +36,7 @@ private static final List<ItemLike> CRYSTALMIXTURES = List.of(ModItems.CRYSTAL_M
         oreSmelting(pWriter, CRYSTALMIXTURES, RecipeCategory.MISC, ModItems.CRYSTAL_INGOT.get(), 0.25f, 200, "crystal_ingot");
         oreBlasting(pWriter, CRYSTALMIXTURES, RecipeCategory.MISC, ModItems.CRYSTAL_INGOT.get(), 0.25f, 100, "cracked_obsidian");
 
-//        oreBlasting(pWriter, OBSIDIANBLASTABLES, RecipeCategory.MISC, ModBlocks.CRACKED_OBSIDIAN.get(), 0.25f, 200, "cracked_obsidian");
+        oreBlasting(pWriter, OBSIDIANBLASTABLES, RecipeCategory.MISC, ModBlocks.CRACKED_OBSIDIAN.get(), 0.25f, 200, "cracked_obsidian");
 
         // Crystal Tools Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_PICKAXE.get())
@@ -80,46 +81,46 @@ private static final List<ItemLike> CRYSTALMIXTURES = List.of(ModItems.CRYSTAL_M
                 .save(pWriter);
 
         // CRACKED OBSIDIAN TOOLS RECIPES
-//        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_PICKAXE.get())
-//                .pattern("CCC")
-//                .pattern(" S ")
-//                .pattern(" S ")
-//                .define('C', ModItems.CRACKED_OBSIDIAN.get())
-//                .define('S', Items.STICK)
-//                .unlockedBy(getHasName(ModItems.CRACKED_OBSIDIAN.get()), has(ModItems.CRACKED_OBSIDIAN.get()))
-//                .save(pWriter);
-//        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_HOE.get())
-//                .pattern("CC")
-//                .pattern(" S")
-//                .pattern(" S")
-//                .define('C', ModItems.CRACKED_OBSIDIAN.get())
-//                .define('S', Items.STICK)
-//                .unlockedBy(getHasName(ModItems.CRACKED_OBSIDIAN.get()), has(ModItems.CRACKED_OBSIDIAN.get()))
-//                .save(pWriter);
-//        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_SHOVEL.get())
-//                .pattern("C")
-//                .pattern("S")
-//                .pattern("S")
-//                .define('C', ModItems.CRACKED_OBSIDIAN.get())
-//                .define('S', Items.STICK)
-//                .unlockedBy(getHasName(ModItems.CRACKED_OBSIDIAN.get()), has(ModItems.CRACKED_OBSIDIAN.get()))
-//                .save(pWriter);
-//        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_AXE.get())
-//                .pattern("CC ")
-//                .pattern("CS ")
-//                .pattern(" S ")
-//                .define('C', ModItems.CRACKED_OBSIDIAN.get())
-//                .define('S', Items.STICK)
-//                .unlockedBy(getHasName(ModItems.CRACKED_OBSIDIAN.get()), has(ModItems.CRACKED_OBSIDIAN.get()))
-//                .save(pWriter);
-//        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRACKED_OBSIDIAN_SWORD.get())
-//                .pattern("C")
-//                .pattern("C")
-//                .pattern("S")
-//                .define('C', ModItems.CRACKED_OBSIDIAN.get())
-//                .define('S', Items.STICK)
-//                .unlockedBy(getHasName(ModItems.CRACKED_OBSIDIAN.get()), has(ModItems.CRACKED_OBSIDIAN.get()))
-//                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_PICKAXE.get())
+                .pattern("CCC")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('C', ModBlocks.CRACKED_OBSIDIAN.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.CRACKED_OBSIDIAN.get()), has(ModBlocks.CRACKED_OBSIDIAN.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_HOE.get())
+                .pattern("CC")
+                .pattern(" S")
+                .pattern(" S")
+                .define('C', ModBlocks.CRACKED_OBSIDIAN.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.CRACKED_OBSIDIAN.get()), has(ModBlocks.CRACKED_OBSIDIAN.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_SHOVEL.get())
+                .pattern("C")
+                .pattern("S")
+                .pattern("S")
+                .define('C', ModBlocks.CRACKED_OBSIDIAN.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.CRACKED_OBSIDIAN.get()), has(ModBlocks.CRACKED_OBSIDIAN.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRACKED_OBSIDIAN_AXE.get())
+                .pattern("CC ")
+                .pattern("CS ")
+                .pattern(" S ")
+                .define('C', ModBlocks.CRACKED_OBSIDIAN.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.CRACKED_OBSIDIAN.get()), has(ModBlocks.CRACKED_OBSIDIAN.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRACKED_OBSIDIAN_SWORD.get())
+                .pattern("C")
+                .pattern("C")
+                .pattern("S")
+                .define('C', ModBlocks.CRACKED_OBSIDIAN.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.CRACKED_OBSIDIAN.get()), has(ModBlocks.CRACKED_OBSIDIAN.get()))
+                .save(pWriter);
 
         // Crystal Armor Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_HELMET.get())
@@ -165,8 +166,8 @@ private static final List<ItemLike> CRYSTALMIXTURES = List.of(ModItems.CRYSTAL_M
                 .requires(Items.QUARTZ)
                 .requires(Items.FLINT)
                 .requires(Items.AMETHYST_SHARD)
-//                .requires(ModBlocks.VOID_CRYSTAL.get())
-//                .requires(ModBlocks.TERRA_CRYSTAL.get())
+                .requires(ModBlocks.VOID_CRYSTAL.get())
+                .requires(ModBlocks.TERRA_CRYSTAL.get())
                 .unlockedBy(getHasName(ModItems.CRYSTAL_MIXTURE.get()), has(ModItems.CRYSTAL_MIXTURE.get()))
                 .save(pWriter);
 

@@ -1,35 +1,35 @@
-[13jan.2026 15:52:19.280] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Quentin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.22, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, crystalborn, --all, --output, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\generated\resources, --existing, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\main\resources]
-[13jan.2026 15:52:19.290] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.14 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[13jan.2026 15:52:19.514] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[13jan.2026 15:52:19.635] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Quentin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[13jan.2026 15:52:20.282] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.22\9a1d96e9108940786d846c8cc0dac07100e79f56\javafmllanguage-1.20.1-47.3.22.jar is missing mods.toml file
-[13jan.2026 15:52:20.293] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.22\2529f2c27d8f8a63ee54efc81fdfc3cea2d43c8\lowcodelanguage-1.20.1-47.3.22.jar is missing mods.toml file
-[13jan.2026 15:52:20.299] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.22\2de14adfd8715f1956007499d8d75c6a4e6fa872\mclanguage-1.20.1-47.3.22.jar is missing mods.toml file
-[13jan.2026 15:52:20.315] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.22\cf26aeb747e0d323f8eed9b00ebfb783282d5837\fmlcore-1.20.1-47.3.22.jar is missing mods.toml file
-[13jan.2026 15:52:20.498] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[13jan.2026 15:52:22.873] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Quentin\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, crystalborn, --all, --output, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\generated\resources, --existing, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\main\resources]
-[13jan.2026 15:52:23.560] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [crystalborn]
-[13jan.2026 15:52:31.591] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.22, for MC 1.20.1 with MCP 20230612.114412
-[13jan.2026 15:52:31.593] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.22 Initialized
-[13jan.2026 15:52:31.957] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[13jan.2026 15:52:31.965] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 6.597 ms
-[13jan.2026 15:52:32.445] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Quentin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[13jan.2026 15:52:32.445] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Quentin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[13jan.2026 15:52:32.873] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[13jan.2026 15:52:32.989] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 114 ms
-[13jan.2026 15:52:32.989] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[13jan.2026 15:52:33.001] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 11 ms
-[13jan.2026 15:52:33.001] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: crystalborn
-[13jan.2026 15:52:33.001] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: crystalborn finished after 0 ms
-[13jan.2026 15:52:33.002] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: crystalborn
-[13jan.2026 15:52:33.093] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: crystalborn finished after 91 ms
-[13jan.2026 15:52:33.094] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id crystalborn
-[13jan.2026 15:52:33.290] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id crystalborn finished after 197 ms
-[13jan.2026 15:52:33.294] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id crystalborn
-[13jan.2026 15:52:33.313] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id crystalborn finished after 20 ms
-[13jan.2026 15:52:33.313] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : crystalborn
-[13jan.2026 15:52:33.323] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : crystalborn finished after 8 ms
-[13jan.2026 15:52:33.323] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:point_of_interest_type mod id crystalborn
-[13jan.2026 15:52:33.323] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:point_of_interest_type mod id crystalborn finished after 0 ms
-[13jan.2026 15:52:33.323] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 451 ms
-[13jan.2026 15:52:33.381] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 85, old count: 83, new count: 86, removed stale: 0, written: 2
+[16mrt.2026 10:20:15.818] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Quentin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.22, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, crystalborn, --all, --output, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\generated\resources, --existing, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\main\resources]
+[16mrt.2026 10:20:15.838] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.14 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[16mrt.2026 10:20:16.048] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[16mrt.2026 10:20:16.133] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Quentin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[16mrt.2026 10:20:16.695] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.22\9a1d96e9108940786d846c8cc0dac07100e79f56\javafmllanguage-1.20.1-47.3.22.jar is missing mods.toml file
+[16mrt.2026 10:20:16.704] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.22\2529f2c27d8f8a63ee54efc81fdfc3cea2d43c8\lowcodelanguage-1.20.1-47.3.22.jar is missing mods.toml file
+[16mrt.2026 10:20:16.713] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.22\2de14adfd8715f1956007499d8d75c6a4e6fa872\mclanguage-1.20.1-47.3.22.jar is missing mods.toml file
+[16mrt.2026 10:20:16.723] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Quentin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.22\cf26aeb747e0d323f8eed9b00ebfb783282d5837\fmlcore-1.20.1-47.3.22.jar is missing mods.toml file
+[16mrt.2026 10:20:16.886] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[16mrt.2026 10:20:19.966] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Quentin\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, crystalborn, --all, --output, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\generated\resources, --existing, C:\BitAcademy Projecten\Crystalborn Mod\minecraft-mod-crystalborn\Source\Project-Crystalborn\src\main\resources]
+[16mrt.2026 10:20:20.692] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [crystalborn]
+[16mrt.2026 10:20:27.594] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.22, for MC 1.20.1 with MCP 20230612.114412
+[16mrt.2026 10:20:27.596] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.22 Initialized
+[16mrt.2026 10:20:28.200] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[16mrt.2026 10:20:28.214] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 6.495 ms
+[16mrt.2026 10:20:28.794] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Quentin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[16mrt.2026 10:20:28.794] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Quentin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.22_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[16mrt.2026 10:20:29.105] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[16mrt.2026 10:20:29.168] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 63 ms
+[16mrt.2026 10:20:29.169] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[16mrt.2026 10:20:29.220] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 51 ms
+[16mrt.2026 10:20:29.220] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: crystalborn
+[16mrt.2026 10:20:29.479] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: crystalborn finished after 258 ms
+[16mrt.2026 10:20:29.480] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: crystalborn
+[16mrt.2026 10:20:29.545] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: crystalborn finished after 65 ms
+[16mrt.2026 10:20:29.545] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id crystalborn
+[16mrt.2026 10:20:29.570] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id crystalborn finished after 24 ms
+[16mrt.2026 10:20:29.570] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id crystalborn
+[16mrt.2026 10:20:29.572] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id crystalborn finished after 1 ms
+[16mrt.2026 10:20:29.572] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : crystalborn
+[16mrt.2026 10:20:29.578] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : crystalborn finished after 5 ms
+[16mrt.2026 10:20:29.579] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:point_of_interest_type mod id crystalborn
+[16mrt.2026 10:20:29.579] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:point_of_interest_type mod id crystalborn finished after 0 ms
+[16mrt.2026 10:20:29.580] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 475 ms
+[16mrt.2026 10:20:29.637] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 113, old count: 113, new count: 114, removed stale: 0, written: 0

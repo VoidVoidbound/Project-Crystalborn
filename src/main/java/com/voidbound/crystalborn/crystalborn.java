@@ -6,8 +6,11 @@ package com.voidbound.crystalborn;
 //import com.voidbound.crystalborn.fluid.ModFluids;
 import com.mojang.logging.LogUtils;
 //import com.voidbound.crystalborn.ModItems.ModItems;
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
+import com.voidbound.crystalborn.ModEffects.ModEffects;
 import com.voidbound.crystalborn.ModItems.ModCreativeModeTabs;
 import com.voidbound.crystalborn.ModItems.ModItems;
+import com.voidbound.crystalborn.ModLoot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -31,10 +34,12 @@ public class crystalborn {
 
         ModCreativeModeTabs.register(modEventBus);
 
+        ModLootModifiers.register(modEventBus);
         ModItems.register(modEventBus);
-//        ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
 
-//        ModLootModifiers.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 //        ModVillagers.register(modEventBus);
 
 //        ModSounds.register(modEventBus);
