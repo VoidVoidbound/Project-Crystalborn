@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "crystalborn:cracked_obsidian"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "CC",
+    " S",
+    " S"
+  ],
+  "result": {
+    "item": "crystalborn:cracked_obsidian_hoe"
+  },
+  "show_notification": true
+}

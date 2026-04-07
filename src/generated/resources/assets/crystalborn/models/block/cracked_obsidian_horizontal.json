@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "crystalborn:block/cracked_obsidian_top",
+    "side": "crystalborn:block/cracked_obsidian"
+  }
+}

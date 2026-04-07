@@ -43,6 +43,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CRACKED_OBSIDIAN.get());
                         pOutput.accept(ModBlocks.VOID_CRYSTAL.get());
                         pOutput.accept(ModBlocks.TERRA_CRYSTAL.get());
+
+                        pOutput.accept(ModItems.LIQUIDVOID_BUCKET.get());
                     })
                     .build());
 

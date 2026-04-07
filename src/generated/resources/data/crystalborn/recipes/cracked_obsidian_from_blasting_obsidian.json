@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "cracked_obsidian",
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "result": "crystalborn:cracked_obsidian"
+}

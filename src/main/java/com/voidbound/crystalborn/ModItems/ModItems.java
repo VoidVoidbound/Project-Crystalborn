@@ -1,5 +1,6 @@
 package com.voidbound.crystalborn.ModItems;
 
+import com.voidbound.crystalborn.ModItems.custom.LiquidVoidItem;
 import com.voidbound.crystalborn.ModItems.custom.ModArmorItem;
 import com.voidbound.crystalborn.crystalborn;
 import net.minecraft.world.item.*;
@@ -42,6 +43,8 @@ public class ModItems {
             () -> new ShovelItem(ModTiers.CRYSTAL, 2.5f, -2.5f, new Item.Properties()));
     public static final RegistryObject<Item> CRYSTAL_HOE = ITEMS.register("crystal_hoe",
             () -> new HoeItem(ModTiers.CRYSTAL, -3, 0.5f, new Item.Properties()));
+    public static final RegistryObject<Item> LIQUIDVOID_BUCKET = ITEMS.register("liquidvoid_bucket",
+            () -> new LiquidVoidItem());
         // Cracked Obsidian Tools
     public static final RegistryObject<Item> CRACKED_OBSIDIAN_SWORD = ITEMS.register("cracked_obsidian_sword",
                 () -> new SwordItem(ModTiers.CRACKED_OBSIDIAN, 3, -2.9f, new Item.Properties()));

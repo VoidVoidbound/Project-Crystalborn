@@ -1,6 +1,7 @@
 package com.voidbound.crystalborn.ModBlocks;
 
 
+import com.voidbound.crystalborn.ModBlocks.custom.LiquidVoidBlock;
 import com.voidbound.crystalborn.ModItems.ModItems;
 import com.voidbound.crystalborn.crystalborn;
 import net.minecraft.core.BlockPos;
@@ -40,8 +41,8 @@ public static final RegistryObject<Block> CRACKED_OBSIDIAN = registerBlock("crac
             });
 
 //    liquids
-    //    public static final RegistryObject<Block> LIQUID_VOID = registerBlock("liquid_void",
-//            () -> new LiquidvoidBlock());
+        public static final RegistryObject<Block> LIQUIDVOID = registerBlock("liquidvoid",
+            () -> new LiquidVoidBlock());
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

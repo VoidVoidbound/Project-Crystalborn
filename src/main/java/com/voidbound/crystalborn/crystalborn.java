@@ -3,11 +3,12 @@ package com.voidbound.crystalborn;
 //import com.voidbound.crystalborn.block.ModBlocks;
 //import com.voidbound.crystalborn.entities.ModEntities;
 //import com.voidbound.crystalborn.fluid.ModFluidTypes;
-//import com.voidbound.crystalborn.fluid.ModFluids;
+import com.voidbound.crystalborn.ModFluids.ModFluids;
 import com.mojang.logging.LogUtils;
 //import com.voidbound.crystalborn.ModItems.ModItems;
 import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import com.voidbound.crystalborn.ModEffects.ModEffects;
+import com.voidbound.crystalborn.ModFluids.ModFluidTypes;
 import com.voidbound.crystalborn.ModItems.ModCreativeModeTabs;
 import com.voidbound.crystalborn.ModItems.ModItems;
 import com.voidbound.crystalborn.ModLoot.ModLootModifiers;
@@ -39,6 +40,8 @@ public class crystalborn {
         ModEffects.register(modEventBus);
 
         ModBlocks.register(modEventBus);
+        ModFluidTypes.REGISTRY.register(modEventBus);
+        ModFluids.REGISTRY.register(modEventBus);
 
 //        ModVillagers.register(modEventBus);
 
