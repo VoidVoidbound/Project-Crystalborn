@@ -1,9 +1,13 @@
 package com.voidbound.crystalborn.ModBlocks.custom;
 
 import com.voidbound.crystalborn.ModBlocks.ModBlocks;
+import com.voidbound.crystalborn.ModEffects.ModEffects;
 import com.voidbound.crystalborn.ModFluids.ModFluids;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -32,6 +36,7 @@ public class LiquidVoidBlock extends LiquidBlock {
                 BlockPos adjacentPos = pos.relative(dir);
                 BlockState adjacentState = level.getBlockState(adjacentPos);
 
+
 //                if (adjacentState.getFluidState().getType() == Fluids.WATER) {
 //                    // Replace with hardened honeycomb
 //                    level.setBlock(pos, ModBlocks.CRACKED_OBSIDIAN.get().defaultBlockState(), 3);
@@ -41,4 +46,18 @@ public class LiquidVoidBlock extends LiquidBlock {
             }
         }
     }
+    @Override
+    public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+        super.entityInside(state, level, pos, entity);
+
+        if (!level.isClientSide && entity instanceof LivingEntity living) {
+            living.addEffect(new MobEffectInstance(
+                    ModEffects.VOIDCORRUPTION.get(),
+                    400,
+                    0,
+                    false, false, true
+            ));
+        }
+    }
+
 }

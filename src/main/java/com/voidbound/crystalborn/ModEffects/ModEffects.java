@@ -16,6 +16,8 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> CRYSTALSHIELDING =
             EFFECTS.register("crystalshielding", CrystalShielding::new);
+    public static final RegistryObject<MobEffect> VOIDCORRUPTION =
+            EFFECTS.register("voidcorruption", VoidCorruption::new);
 
 
     public static void register(IEventBus eventBus) {EFFECTS.register(eventBus);}
