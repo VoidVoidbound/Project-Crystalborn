@@ -1,9 +1,11 @@
 package com.voidbound.crystalborn.ModItems;
 
+import com.voidbound.crystalborn.ModEntities.ModEntities;
 import com.voidbound.crystalborn.ModItems.custom.LiquidVoidItem;
 import com.voidbound.crystalborn.ModItems.custom.ModArmorItem;
 import com.voidbound.crystalborn.crystalborn;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -56,6 +58,9 @@ public class ModItems {
             () -> new ShovelItem(ModTiers.CRACKED_OBSIDIAN, 1.5f, -3.5f, new Item.Properties()));
     public static final RegistryObject<Item> CRACKED_OBSIDIAN_HOE = ITEMS.register("cracked_obsidian_hoe",
             () -> new HoeItem(ModTiers.CRACKED_OBSIDIAN, -3, -0.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> AETHERDRAKE_SPAWN_EGG = ITEMS.register("aetherdrake_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.AETHERDRAKE, 0x7e9680, 0xc5d1c5, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

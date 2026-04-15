@@ -1,5 +1,7 @@
 package com.voidbound.crystalborn.ModEvent;
 
+import com.voidbound.crystalborn.ModEntities.client.AetherDrakeModel;
+import com.voidbound.crystalborn.ModEntities.client.ModModelLayers;
 import com.voidbound.crystalborn.crystalborn;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
@@ -11,18 +13,16 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 //import com.voidbound.crystalborn.ModBlocks.entity.ModBlockEntities;
 //import com.voidbound.crystalborn.ModBlocks.entity.renderer.GemPolishingBlockEntityRenderer;
-//import com.voidbound.crystalborn.ModEntity.client.ModModelLayers;
-//import com.voidbound.crystalborn.ModEntity.client.RhinoModel;
 
 @Mod.EventBusSubscriber(modid = crystalborn.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModEventBusClientEvents {
-//    @SubscribeEvent
-//    public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
-//        event.registerLayerDefinition(ModModelLayers.RHINO_LAYER, RhinoModel::createBodyLayer);
-//
+    @SubscribeEvent
+    public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(ModModelLayers.AETHERDRAKE_LAYER, AetherDrakeModel::createBodyLayer);
+
 //        event.registerLayerDefinition(ModModelLayers.PINE_BOAT_LAYER, BoatModel::createBodyModel);
 //        event.registerLayerDefinition(ModModelLayers.PINE_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
-//    }
+    }
 
 //    @SubscribeEvent
 //    public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {

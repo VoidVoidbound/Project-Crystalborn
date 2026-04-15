@@ -45,6 +45,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TERRA_CRYSTAL.get());
 
                         pOutput.accept(ModItems.LIQUIDVOID_BUCKET.get());
+                        pOutput.accept(ModItems.AETHERDRAKE_SPAWN_EGG.get());
                     })
                     .build());
 
