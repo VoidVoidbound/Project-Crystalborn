@@ -15,7 +15,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<AetherDrakeEntity>> AETHERDRAKE =
             ENTITY_TYPES.register("aetherdrake", () -> EntityType.Builder.of(AetherDrakeEntity::new, MobCategory.CREATURE)
-                    .sized(2.5f, 1f).build("aetherdrake"));
+                    .sized(2.2f, 0.5f).build("aetherdrake"));
 
 
 

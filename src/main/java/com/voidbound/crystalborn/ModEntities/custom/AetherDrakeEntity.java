@@ -2,6 +2,7 @@ package com.voidbound.crystalborn.ModEntities.custom;
 
 import com.voidbound.crystalborn.ModEntities.ModEntities;
 import com.voidbound.crystalborn.ModEntities.ai.AetherDrakeAttackGoal;
+import com.voidbound.crystalborn.ModEntities.ai.RandomFlyingGoal;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -9,21 +10,22 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.AnimationState;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
+
 
 public class AetherDrakeEntity extends Animal {
     private static final EntityDataAccessor<Boolean> ATTACKING =
@@ -31,13 +33,27 @@ public class AetherDrakeEntity extends Animal {
 
     public AetherDrakeEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
+
+        this.moveControl = new FlyingMoveControl(this, 20, true);
+        this.navigation = new FlyingPathNavigation(this, pLevel);
     }
+
+
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
     public final AnimationState attackAnimationState = new AnimationState();
     public int attackAnimationTimeout = 0;
+
+    @Override
+    public boolean isNoGravity() {
+        return true;
+    }
+    @Override
+    public boolean causeFallDamage(float fallDistance, float damageMultiplier, DamageSource source) {
+        return false;
+    }
 
 
     @Override
@@ -58,7 +74,7 @@ public class AetherDrakeEntity extends Animal {
         }
 
         if (this.isAttacking() && attackAnimationTimeout <= 0) {
-            attackAnimationTimeout = 80; // length om ticks of the animation
+            attackAnimationTimeout = 80;
             attackAnimationState.start(this.tickCount);
         } else {
             --this.attackAnimationTimeout;
@@ -104,9 +120,10 @@ public class AetherDrakeEntity extends Animal {
         this.goalSelector.addGoal(1, new BreedGoal(this, 1.150));
         this.goalSelector.addGoal(2, new TemptGoal(this, 1.2D, Ingredient.of(Items.COOKED_BEEF), false));
 
+        this.goalSelector.addGoal(2, new RandomFlyingGoal(this, 1.0));
+
         this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.10));
 
-        this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.10));
         this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 3f));
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 
@@ -115,14 +132,26 @@ public class AetherDrakeEntity extends Animal {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
-                .add(Attributes.MAX_HEALTH, 20D)
+                .add(Attributes.MAX_HEALTH, 10D)
                 .add(Attributes.FOLLOW_RANGE, 24D)
-                .add(Attributes.MOVEMENT_SPEED, 0.5D)
-                .add(Attributes.ARMOR_TOUGHNESS, 01f)
+                .add(Attributes.MOVEMENT_SPEED, 0.2D)
+                .add(Attributes.ARMOR_TOUGHNESS, 0f)
                 .add(Attributes.ATTACK_KNOCKBACK, 0.5f)
-                .add(Attributes.FLYING_SPEED, 0.5D)
+                .add(Attributes.FLYING_SPEED, 0.2D)
                 .add(Attributes.ATTACK_DAMAGE, 2f);
     }
+
+    @Override
+    public void travel(Vec3 vec) {
+        if (this.isControlledByLocalInstance()) {
+            this.moveRelative(0.1F, vec);
+            this.move(MoverType.SELF, this.getDeltaMovement());
+            this.setDeltaMovement(this.getDeltaMovement().scale(0.91));
+        } else {
+            super.travel(vec);
+        }
+    }
+
 
     @Override
     public @Nullable AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
@@ -149,4 +178,8 @@ public class AetherDrakeEntity extends Animal {
     protected @Nullable SoundEvent getDeathSound() {
         return SoundEvents.PHANTOM_DEATH;
     }
+
+
+
+
 }
