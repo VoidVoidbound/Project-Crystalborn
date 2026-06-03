@@ -12,7 +12,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_CRYSTAL_TOOL = tag("needs_crystal_tool");
         public static final TagKey<Block> NEEDS_CRACKED_OBSIDIAN_TOOL = tag("needs_cracked_obsidian_tool");
-
+        public static final TagKey<Block> SAPLING_CAN_PLACE_ON = tag("sapling_can_place_on");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(crystalborn.MOD_ID, name));

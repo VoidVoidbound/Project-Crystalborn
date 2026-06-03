@@ -34,7 +34,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.VOID_CRYSTAL);
         blockItem(ModBlocks.TERRA_CRYSTAL);
         blockItem(ModBlocks.CRACKED_OBSIDIAN);
-//        blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
+
+        saplingBlock(ModBlocks.TERRACRYSTAL_SAPLING);
+        saplingBlock(ModBlocks.VOIDCRYSTAL_SAPLING);
 //
 //        blockWithItem(ModBlocks.SAPPHIRE_ORE);
 //        blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);

@@ -2,21 +2,16 @@ package com.voidbound.crystalborn.ModBlocks;
 
 
 import com.voidbound.crystalborn.ModBlocks.custom.LiquidVoidBlock;
+import com.voidbound.crystalborn.ModBlocks.custom.VoidCrystalSaplingBlock;
 import com.voidbound.crystalborn.ModItems.ModItems;
+import com.voidbound.crystalborn.worldgen.tree.TerraCrystalTreeGrower;
 import com.voidbound.crystalborn.crystalborn;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
+import com.voidbound.crystalborn.worldgen.tree.VoidCrystalTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -34,15 +29,25 @@ public static final RegistryObject<Block> CRACKED_OBSIDIAN = registerBlock("crac
 
 //    crystals
     public static final RegistryObject<Block> VOID_CRYSTAL = registerBlock("void_crystal",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)) {
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).lightLevel(state -> 15)) {
             });
     public static final RegistryObject<Block> TERRA_CRYSTAL = registerBlock("terra_crystal",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)) {
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).lightLevel(state -> 15)) {
             });
 
 //    liquids
         public static final RegistryObject<Block> LIQUIDVOID = registerBlock("liquidvoid",
             () -> new LiquidVoidBlock());
+
+//    saplings
+    public static final RegistryObject<Block> TERRACRYSTAL_SAPLING = registerBlock("terracrystal_sapling",
+            () -> new SaplingBlock(new TerraCrystalTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> VOIDCRYSTAL_SAPLING =
+            registerBlock("voidcrystal_sapling",
+                    () -> new VoidCrystalSaplingBlock(
+                            new VoidCrystalTreeGrower(),
+                            BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+                    ));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

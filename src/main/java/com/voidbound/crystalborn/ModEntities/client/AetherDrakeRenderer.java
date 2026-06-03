@@ -15,7 +15,7 @@ public class AetherDrakeRenderer extends MobRenderer<AetherDrakeEntity, AetherDr
     }
 
     @Override
-    public ResourceLocation getTextureLocation(AetherDrakeEntity rhinoEntity) {
+    public ResourceLocation getTextureLocation(AetherDrakeEntity aetherdrakeEntity) {
         return new ResourceLocation(crystalborn.MOD_ID, "textures/entity/aetherdrake.png");
     }
 

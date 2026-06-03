@@ -1,0 +1,46 @@
+{
+  "item.crystalborn.crystal_mixture": "Cristal mixy mix",
+  "item.crystalborn.crystal_ingot": "Cristal ingut",
+  "item.crystalborn.crystal_apple": "Cristal apl",
+
+  "item.crystalborn.crystal_helmet": "Cristal Hat",
+  "item.crystalborn.crystal_chestplate": "Cristal shirt",
+  "item.crystalborn.crystal_leggings": "Cristal pantz",
+  "item.crystalborn.crystal_boots": "Cristal shuz",
+
+  "item.crystalborn.crystal_sword": "Cristal swurd",
+  "item.crystalborn.crystal_pickaxe": "Cristal Pikax",
+  "item.crystalborn.crystal_axe": "Cristal ax",
+  "item.crystalborn.crystal_shovel": "Cristal shuvl",
+  "item.crystalborn.crystal_hoe": "Cristal Hoe",
+
+  "item.crystalborn.cracked_obsidian_sword": "craked hardest thing evar swurd",
+  "item.crystalborn.cracked_obsidian_pickaxe": "craked hardest thing evar Pikax",
+  "item.crystalborn.cracked_obsidian_axe": "craked hardest thing evar ax",
+  "item.crystalborn.cracked_obsidian_shovel": "craked hardest thing evar shuvl",
+  "item.crystalborn.cracked_obsidian_hoe": "craked hardest thing evar Hoe",
+
+  "item.crystalborn.aetherdrake_spawn_egg": "Aethr Dwagon spon ec",
+  "item.crystalborn.gemfang_spawn_egg": "shiny rok teef spon ec",
+  "item.crystalborn.gemgrazer_spawn_egg": "shiny rok grazr spon ec",
+  "item.crystalborn.prismelk_spawn_egg": "rainbow bender big deer fren spon ec",
+  "item.crystalborn.shardling_spawn_egg": "shardlin spon ec",
+  "item.crystalborn.lumibloom_spawn_egg": "glowy floof floofy flower pop spon ec",
+
+  "item.crystalborn.liquidvoid_bucket": "bukkit full of no thing nezz !! splooshy stuffz",
+
+  "block.crystalborn.cracked_obsidian": "craked hardest thing evar",
+  "block.crystalborn.void_crystal": "no thing nezz !! Cristal",
+  "block.crystalborn.terra_crystal": "erd wurld Cristal",
+  "block.crystalborn.liquidvoid": "no thing nezz !! splooshy stuffz",
+  "block.crystalborn.terracrystal_sapling": "Baby erd wurld Cristal",
+  "block.crystalborn.voidcrystal_sapling": "Baby no thing nezz !! Cristal",
+
+  "effect.crystalborn.crystalshielding": "Cristal blokkin hits",
+  "effect.crystalborn.voidcorruption": "no thing nezz !! Corrupghun",
+
+  "biome.crystalborn.terracrystal_hills": "erd wurld Cristal lil mountinz",
+  "biome.crystalborn.voidcrystal_forest": "no thing nezz !! Cristal treez place",
+
+  "creativetab.crystalborn": "Cristalspawned stuffz"
+}

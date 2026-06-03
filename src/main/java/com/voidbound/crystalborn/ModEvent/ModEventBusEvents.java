@@ -1,7 +1,7 @@
 package com.voidbound.crystalborn.ModEvent;
 
 import com.voidbound.crystalborn.ModEntities.ModEntities;
-import com.voidbound.crystalborn.ModEntities.custom.AetherDrakeEntity;
+import com.voidbound.crystalborn.ModEntities.custom.*;
 import com.voidbound.crystalborn.crystalborn;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,5 +12,10 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.AETHERDRAKE.get(), AetherDrakeEntity.createAttributes().build());
+        event.put(ModEntities.GEMFANG.get(), GemFangEntity.createAttributes().build());
+        event.put(ModEntities.GEMGRAZER.get(), GemGrazerEntity.createAttributes().build());
+        event.put(ModEntities.PRISMELK.get(), PrismElkEntity.createAttributes().build());
+        event.put(ModEntities.LUMIBLOOM.get(), LumibloomEntity.createAttributes().build());
+        event.put(ModEntities.SHARDLING.get(), ShardlingEntity.createAttributes().build());
     }
 }

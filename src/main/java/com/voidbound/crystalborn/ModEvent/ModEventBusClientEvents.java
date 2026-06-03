@@ -1,7 +1,6 @@
 package com.voidbound.crystalborn.ModEvent;
 
-import com.voidbound.crystalborn.ModEntities.client.AetherDrakeModel;
-import com.voidbound.crystalborn.ModEntities.client.ModModelLayers;
+import com.voidbound.crystalborn.ModEntities.client.*;
 import com.voidbound.crystalborn.crystalborn;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
@@ -19,6 +18,11 @@ public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelLayers.AETHERDRAKE_LAYER, AetherDrakeModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.GEMFANG_LAYER, GemFangModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.GEMGRAZER_LAYER, GemGrazerModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.PRISMELK_LAYER, PrismElkModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.LUMIBLOOM_LAYER, LumibloomModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.SHARDLING_LAYER, ShardlingModel::createBodyLayer);
 
 //        event.registerLayerDefinition(ModModelLayers.PINE_BOAT_LAYER, BoatModel::createBodyModel);
 //        event.registerLayerDefinition(ModModelLayers.PINE_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);

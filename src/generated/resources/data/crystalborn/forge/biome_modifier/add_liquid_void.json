@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "crystalborn:end_liquid_void_placed",
+  "step": "underground_ores"
+}

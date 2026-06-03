@@ -1,4 +1,6 @@
-// 1.20.1	2026-03-13T11:59:00.6434388	Loot Tables
+// 1.20.1	2026-05-26T11:39:58.1136121	Loot Tables
 a950c4b46e2bf887489a2ce33b8a23c4fc4d57a2 data/crystalborn/loot_tables/blocks/cracked_obsidian.json
+e09827e9c76c9bd91949b9958627316d7f618f2e data/crystalborn/loot_tables/blocks/terracrystal_sapling.json
 b155dc85f45b68432798c7198658b0174abea247 data/crystalborn/loot_tables/blocks/terra_crystal.json
+46cd57c4866d9866d23d2090945fd7502bc9387a data/crystalborn/loot_tables/blocks/voidcrystal_sapling.json
 271e09c6db6fc583485e1da16a378b8dc7a2436f data/crystalborn/loot_tables/blocks/void_crystal.json

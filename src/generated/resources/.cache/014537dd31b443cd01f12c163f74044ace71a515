@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-14T11:11:42.0759228	Item Models: crystalborn
+// 1.20.1	2026-05-26T11:39:58.1100777	Item Models: crystalborn
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/crystalborn/models/item/aetherdrake_spawn_egg.json
 a5043633d71d265cbd2b09b80d3246f0cc1c4659 assets/crystalborn/models/item/cracked_obsidian_axe.json
 e4ccecaa6d6d69199a5b50265a977332c92a7927 assets/crystalborn/models/item/cracked_obsidian_hoe.json
@@ -57,3 +57,10 @@ bbbfc4c3bf2fb8bef48b2c2384f280da7707fe24 assets/crystalborn/models/item/crystal_
 1dbf32e8fbd6badf612799018beec08f100174d8 assets/crystalborn/models/item/crystal_pickaxe.json
 3e1be52798b9eed7d8833dc381c4e5e3ae0de18e assets/crystalborn/models/item/crystal_shovel.json
 cf8a02574983d1626c0351fc3571e12f1fb8423f assets/crystalborn/models/item/crystal_sword.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/crystalborn/models/item/gemfang_spawn_egg.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/crystalborn/models/item/gemgrazer_spawn_egg.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/crystalborn/models/item/lumibloom_spawn_egg.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/crystalborn/models/item/prismelk_spawn_egg.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/crystalborn/models/item/shardling_spawn_egg.json
+ac28880733d6b9242955d3c2d3420952f81ed95b assets/crystalborn/models/item/terracrystal_sapling.json
+3bb27f2de57fadb0cc0ab69323cdaecb47eeaeed assets/crystalborn/models/item/voidcrystal_sapling.json

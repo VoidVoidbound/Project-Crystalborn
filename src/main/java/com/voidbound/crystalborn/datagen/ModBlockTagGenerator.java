@@ -1,9 +1,11 @@
 package com.voidbound.crystalborn.datagen;
 
 import com.voidbound.crystalborn.ModBlocks.ModBlocks;
+import com.voidbound.crystalborn.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -28,6 +30,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CRACKED_OBSIDIAN.get()
                         );
 
+        this.tag(ModTags.Blocks.SAPLING_CAN_PLACE_ON)
+                .add(Blocks.END_STONE);
+
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TERRA_CRYSTAL.get(),
@@ -35,6 +40,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.CRACKED_OBSIDIAN.get());
+
+        this.tag(BlockTags.DRAGON_IMMUNE)
+                .add(ModBlocks.VOID_CRYSTAL.get(), ModBlocks.LIQUIDVOID.get(), ModBlocks.VOIDCRYSTAL_SAPLING.get(), ModBlocks.CRACKED_OBSIDIAN.get());
 //
 //        this.tag(BlockTags.NEEDS_STONE_TOOL)
 //                .add(ModBlocks.NETHER_SAPPHIRE_ORE.get());

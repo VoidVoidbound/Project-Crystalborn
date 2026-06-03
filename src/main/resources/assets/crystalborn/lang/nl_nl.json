@@ -1,0 +1,46 @@
+{
+  "ModItems.crystalborn.crystal_mixture": "Kristal Mix",
+  "ModItems.crystalborn.crystal_ingot": "Kristallen staaf",
+  "ModItems.crystalborn.crystal_apple": "Kristallen appel",
+
+  "ModItems.crystalborn.crystal_helmet": "Kristallen Helm",
+  "ModItems.crystalborn.crystal_chestplate": "Kristallen Borstplaat",
+  "ModItems.crystalborn.crystal_leggings": "Kristallen Broek",
+  "ModItems.crystalborn.crystal_boots": "Kristallen Schoenen",
+
+  "ModItems.crystalborn.crystal_sword": "Kristallen Zwaard",
+  "ModItems.crystalborn.crystal_pickaxe": "Kristallen Houweel",
+  "ModItems.crystalborn.crystal_axe": "Kristallen Bijl",
+  "ModItems.crystalborn.crystal_shovel": "Kristallen Schep",
+  "ModItems.crystalborn.crystal_hoe": "Kristallen schoffel",
+
+  "ModItems.crystalborn.cracked_obsidian_sword": "Gespleten Obsidiaan Zwaard",
+  "ModItems.crystalborn.cracked_obsidian_pickaxe": "Gespleten Obsidiaan Houweel",
+  "ModItems.crystalborn.cracked_obsidian_axe": "Gespleten Obsidiaan Bijl",
+  "ModItems.crystalborn.cracked_obsidian_shovel": "Gespleten Obsidiaan Schep",
+  "ModItems.crystalborn.cracked_obsidian_hoe": "Gespleten Obsidiaan Schoffel",
+
+  "ModItems.crystalborn.aetherdrake_spawn_egg": "Aether Drake Spawn Ei",
+  "ModItems.crystalborn.gemfang_spawn_egg": "Gemfang Spawn Ei",
+  "ModItems.crystalborn.gemgrazer_spawn_egg": "Gemgrazer Spawn Ei",
+  "ModItems.crystalborn.prismelk_spawn_egg": "Prism Elk Spawn Ei",
+  "ModItems.crystalborn.shardling_spawn_egg": "Shardling Spawn Ei",
+  "ModItems.crystalborn.lumibloom_spawn_egg": "Lumibloom Spawn Ei",
+
+  "ModItems.crystalborn.liquidvoid_bucket": "Emmer met Vloeibare Void",
+
+  "ModBlocks.crystalborn.cracked_obsidian": "Gespleten Obsidiaan",
+  "ModBlocks.crystalborn.void_crystal": "Void Kristal",
+  "ModBlocks.crystalborn.terra_crystal": "Terra Kristal",
+  "ModBlocks.crystalborn.liquidvoid": "Vloeibare Void",
+  "ModBlocks.crystalborn.terracrystal_sapling": "Terra Kristal Boompje",
+  "ModBlocks.crystalborn.voidcrystal_sapling": "Void Kristal Boompje",
+
+  "ModEffects.crystalborn.crystalshielding": "Kristallen Bescherming",
+  "ModEffects.crystalborn.voidcorruption": "Void Corruptie",
+
+  "ModBiomes.crystalborn.terracrystal_hills": "Terra Kristal Heuvels",
+  "ModBiomes.crystalborn.voidcrystal_forest": "Void Kristal Bos",
+
+  "creativetab.crystalborn": "Crystalborn"
+}

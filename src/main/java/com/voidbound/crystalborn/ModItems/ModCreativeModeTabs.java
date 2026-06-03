@@ -45,7 +45,16 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TERRA_CRYSTAL.get());
 
                         pOutput.accept(ModItems.LIQUIDVOID_BUCKET.get());
+
+                        pOutput.accept(ModItems.GEMGRAZER_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.GEMFANG_SPAWN_EGG.get());
                         pOutput.accept(ModItems.AETHERDRAKE_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.PRISMELK_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.LUMIBLOOM_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.SHARDLING_SPAWN_EGG.get());
+
+                        pOutput.accept(ModBlocks.TERRACRYSTAL_SAPLING.get());
+                        pOutput.accept(ModBlocks.VOIDCRYSTAL_SAPLING.get());
                     })
                     .build());
 

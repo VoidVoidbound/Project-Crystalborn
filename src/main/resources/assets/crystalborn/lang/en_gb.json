@@ -1,0 +1,46 @@
+{
+  "item.crystalborn.crystal_mixture": "Crystal Mixture",
+  "item.crystalborn.crystal_ingot": "Crystal Ingot",
+  "item.crystalborn.crystal_apple": "Crystal Apple",
+
+  "item.crystalborn.crystal_helmet": "Crystal Helmet",
+  "item.crystalborn.crystal_chestplate": "Crystal Chestplate",
+  "item.crystalborn.crystal_leggings": "Crystal Leggings",
+  "item.crystalborn.crystal_boots": "Crystal Boots",
+  
+  "item.crystalborn.crystal_sword": "Crystal Sword",
+  "item.crystalborn.crystal_pickaxe": "Crystal Pickaxe",
+  "item.crystalborn.crystal_axe": "Crystal Axe",
+  "item.crystalborn.crystal_shovel": "Crystal Shovel",
+  "item.crystalborn.crystal_hoe": "Crystal Hoe",
+
+  "item.crystalborn.cracked_obsidian_sword": "Cracked Obsidian Sword",
+  "item.crystalborn.cracked_obsidian_pickaxe": "Cracked Obsidian Pickaxe",
+  "item.crystalborn.cracked_obsidian_axe": "Cracked Obsidian Axe",
+  "item.crystalborn.cracked_obsidian_shovel": "Cracked Obsidian Shovel",
+  "item.crystalborn.cracked_obsidian_hoe": "Cracked Obsidian Hoe",
+
+  "item.crystalborn.aetherdrake_spawn_egg": "Aether Drake Spawn Egg",
+  "item.crystalborn.gemfang_spawn_egg": "Gemfang Spawn Egg",
+  "item.crystalborn.gemgrazer_spawn_egg": "Gemgrazer Spawn Egg",
+  "item.crystalborn.prismelk_spawn_egg": "Prism Elk Spawn Egg",
+  "item.crystalborn.shardling_spawn_egg": "Shardling Spawn Egg",
+  "item.crystalborn.lumibloom_spawn_egg": "Lumibloom Spawn Egg",
+
+  "item.crystalborn.liquidvoid_bucket": "Bucket of Liquid Void",
+
+  "block.crystalborn.cracked_obsidian": "Cracked Obsidian",
+  "block.crystalborn.void_crystal": "Void Crystal",
+  "block.crystalborn.terra_crystal": "Terra Crystal",
+  "block.crystalborn.liquidvoid": "Liquid Void",
+  "block.crystalborn.terracrystal_sapling": "Terra Crystal Sapling",
+  "block.crystalborn.voidcrystal_sapling": "Void Crystal Sapling",
+
+  "effect.crystalborn.crystalshielding": "Crystal Shielding",
+  "effect.crystalborn.voidcorruption": "Void Corruption",
+
+  "biome.crystalborn.terracrystal_hills": "Terra Crystal Hills",
+  "biome.crystalborn.voidcrystal_forest": "Void Crystal Forest",
+
+  "creativetab.crystalborn": "Crystalborn"
+}

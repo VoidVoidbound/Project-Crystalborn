@@ -1,5 +1,6 @@
 package com.voidbound.crystalborn.datagen;
 
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -91,7 +92,13 @@ public class    ModItemModelProvider extends ItemModelProvider {
 //        simpleBlockItemBlockTexture(ModBlocks.CATMINT);
 //
         withExistingParent(ModItems.AETHERDRAKE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-//
+        withExistingParent(ModItems.GEMFANG_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.GEMGRAZER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.PRISMELK_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.SHARDLING_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.LUMIBLOOM_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
+
 //        simpleItem(ModItems.PINE_SIGN);
 //        simpleItem(ModItems.PINE_HANGING_SIGN);
 //
@@ -99,7 +106,8 @@ public class    ModItemModelProvider extends ItemModelProvider {
 //        simpleItem(ModItems.PINE_CHEST_BOAT);
 //
 //        simpleItem(ModItems.DICE);
-//        saplingItem(ModBlocks.PINE_SAPLING);
+        saplingItem(ModBlocks.TERRACRYSTAL_SAPLING);
+        saplingItem(ModBlocks.VOIDCRYSTAL_SAPLING);
     }
 
     // Shoutout to El_Redstoniano for making this

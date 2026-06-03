@@ -24,7 +24,6 @@ public class AetherDrakeAttackGoal extends MeleeAttackGoal {
         ticksUntilNextAttack = 20;
     }
 
-
     @Override
     protected void checkAndPerformAttack(LivingEntity pEnemy, double pDistToEnemySqr) {
         if (isEnemyWithinAttackDistance(pEnemy, pDistToEnemySqr)) {

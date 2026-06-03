@@ -2,7 +2,7 @@ package com.voidbound.crystalborn.ModEntities.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.voidbound.crystalborn.ModEntities.animations.ModAnimationDefinitions;
+import com.voidbound.crystalborn.ModEntities.animations.AetherDrakeAnimationDefinitions;
 import com.voidbound.crystalborn.ModEntities.custom.AetherDrakeEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
@@ -60,9 +60,9 @@ public class AetherDrakeModel<T extends Entity> extends HierarchicalModel<T> {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 
-		this.animateWalk(ModAnimationDefinitions.AETHERDRAKEFLYING, limbSwing, limbSwingAmount, 1f, 2.5f);
-		this.animate(((AetherDrakeEntity) entity).idleAnimationState, ModAnimationDefinitions.AETHERDRAKEFLYING, ageInTicks, 1f);
-		this.animate(((AetherDrakeEntity) entity).attackAnimationState, ModAnimationDefinitions.AETHERDRAKEFLYING, ageInTicks, 1f);
+		this.animateWalk(AetherDrakeAnimationDefinitions.AETHERDRAKEFLYING, limbSwing, limbSwingAmount, 1f, 2.5f);
+		this.animate(((AetherDrakeEntity) entity).idleAnimationState, AetherDrakeAnimationDefinitions.AETHERDRAKEFLYING, ageInTicks, 1f);
+		this.animate(((AetherDrakeEntity) entity).attackAnimationState, AetherDrakeAnimationDefinitions.AETHERDRAKEFLYING, ageInTicks, 1f);
 	}
 
 	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {

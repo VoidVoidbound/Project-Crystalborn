@@ -59,8 +59,19 @@ public class ModItems {
     public static final RegistryObject<Item> CRACKED_OBSIDIAN_HOE = ITEMS.register("cracked_obsidian_hoe",
             () -> new HoeItem(ModTiers.CRACKED_OBSIDIAN, -3, -0.5f, new Item.Properties()));
 
+    // spawneggs
     public static final RegistryObject<Item> AETHERDRAKE_SPAWN_EGG = ITEMS.register("aetherdrake_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.AETHERDRAKE, 0x7e9680, 0xc5d1c5, new Item.Properties()));
+    public static final RegistryObject<Item> GEMFANG_SPAWN_EGG = ITEMS.register("gemfang_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.GEMFANG, 0x00FF00, 0x60BF60, new Item.Properties()));
+    public static final RegistryObject<Item> GEMGRAZER_SPAWN_EGG = ITEMS.register("gemgrazer_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.GEMGRAZER, 0x7e9680, 0xc5d1c5, new Item.Properties()));
+    public static final RegistryObject<Item> PRISMELK_SPAWN_EGG = ITEMS.register("prismelk_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.PRISMELK, 0x00FF00, 0x60BF60, new Item.Properties()));
+    public static final RegistryObject<Item> SHARDLING_SPAWN_EGG = ITEMS.register("shardling_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.SHARDLING, 0x7e9680, 0xc5d1c5, new Item.Properties()));
+    public static final RegistryObject<Item> LUMIBLOOM_SPAWN_EGG = ITEMS.register("lumibloom_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.LUMIBLOOM, 0x00FF00, 0x60BF60, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

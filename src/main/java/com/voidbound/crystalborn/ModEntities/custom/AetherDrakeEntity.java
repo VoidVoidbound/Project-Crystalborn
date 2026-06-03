@@ -1,8 +1,10 @@
 package com.voidbound.crystalborn.ModEntities.custom;
 
+import com.voidbound.crystalborn.ModBlocks.ModBlocks;
 import com.voidbound.crystalborn.ModEntities.ModEntities;
 import com.voidbound.crystalborn.ModEntities.ai.AetherDrakeAttackGoal;
 import com.voidbound.crystalborn.ModEntities.ai.RandomFlyingGoal;
+import com.voidbound.crystalborn.ModEvent.BrokenBlockAgroEvent;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -10,6 +12,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -26,6 +29,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Set;
 
 public class AetherDrakeEntity extends Animal {
     private static final EntityDataAccessor<Boolean> ATTACKING =
@@ -51,10 +55,17 @@ public class AetherDrakeEntity extends Animal {
         return true;
     }
     @Override
-    public boolean causeFallDamage(float fallDistance, float damageMultiplier, DamageSource source) {
-        return false;
+    public boolean hurt(DamageSource damagesource, float amount) {
+        if (damagesource.is(DamageTypes.FALL))
+            return false;
+        if (damagesource.is(DamageTypes.MAGIC))
+            return false;
+        if (damagesource.is(DamageTypes.DROWN))
+            return false;
+        if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
+            return false;
+        return super.hurt(damagesource, amount);
     }
-
 
     @Override
     public void tick() {
@@ -128,6 +139,7 @@ public class AetherDrakeEntity extends Animal {
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+        this.targetSelector.addGoal(1, new BrokenBlockAgroEvent(this, Set.of(ModBlocks.VOID_CRYSTAL.get()), 10));
     }
 
     public static AttributeSupplier.Builder createAttributes() {
