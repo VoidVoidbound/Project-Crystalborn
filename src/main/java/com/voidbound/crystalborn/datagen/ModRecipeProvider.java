@@ -168,7 +168,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.AMETHYST_SHARD)
                 .requires(ModBlocks.VOID_CRYSTAL.get())
                 .requires(ModBlocks.TERRA_CRYSTAL.get())
-                .unlockedBy(getHasName(ModItems.CRYSTAL_MIXTURE.get()), has(ModItems.CRYSTAL_MIXTURE.get()))
+                .requires(ModBlocks.INFERNAL_CRYSTAL.get())
+                .unlockedBy(getHasName(Items.BOWL), has(Items.BOWL))
                 .save(pWriter);
 
     }

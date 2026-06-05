@@ -9,6 +9,7 @@ import net.minecraft.world.level.biome.Biome;
 public class ModBiomes
 {
     public static final ResourceKey<Biome> TERRACRYSTAL_HILLS = register("terracrystal_hills");
+    public static final ResourceKey<Biome> INFERNALCRYSTALCAVERNS = register("infernalcrystal_caverns");
     public static final ResourceKey<Biome> VOIDCRYSTAL_FOREST = register("voidcrystal_forest");
 
     private static ResourceKey<Biome> register(String name)

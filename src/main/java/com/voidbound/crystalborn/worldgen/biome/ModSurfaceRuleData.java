@@ -9,7 +9,7 @@ public class ModSurfaceRuleData
 {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
     private static final SurfaceRules.RuleSource GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
-    private static final SurfaceRules.RuleSource TERRACRYSTAL = makeStateRule(ModBlocks.TERRA_CRYSTAL.get());
+    private static final SurfaceRules.RuleSource NETHERRACK = makeStateRule(Blocks.NETHERRACK);
     private static final SurfaceRules.RuleSource END_STONE = makeStateRule(Blocks.END_STONE);
 
     public static SurfaceRules.RuleSource makeRules()
@@ -19,7 +19,8 @@ public class ModSurfaceRuleData
 
         return SurfaceRules.sequence(
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.TERRACRYSTAL_HILLS), GRASS_BLOCK),
-                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.VOIDCRYSTAL_FOREST), END_STONE)
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.VOIDCRYSTAL_FOREST), END_STONE),
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.INFERNALCRYSTALCAVERNS), NETHERRACK)
 //                ,
 //
 //                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, grassSurface)

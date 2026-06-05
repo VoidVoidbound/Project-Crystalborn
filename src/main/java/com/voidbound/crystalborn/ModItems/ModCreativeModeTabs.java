@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CRACKED_OBSIDIAN.get());
                         pOutput.accept(ModBlocks.VOID_CRYSTAL.get());
                         pOutput.accept(ModBlocks.TERRA_CRYSTAL.get());
+                        pOutput.accept(ModBlocks.INFERNAL_CRYSTAL.get());
 
                         pOutput.accept(ModItems.LIQUIDVOID_BUCKET.get());
 
@@ -55,6 +56,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.TERRACRYSTAL_SAPLING.get());
                         pOutput.accept(ModBlocks.VOIDCRYSTAL_SAPLING.get());
+                        pOutput.accept(ModBlocks.INFERNAL_CRYSTAL_SHARD.get());
                     })
                     .build());
 

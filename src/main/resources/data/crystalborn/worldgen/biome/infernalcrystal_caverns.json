@@ -1,0 +1,78 @@
+
+{
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 0.8,
+  "effects": {
+    "fog_color": 11810358,
+    "foliage_color": 8545348,
+    "grass_color": 8545348,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "crystalborn:bar_brawl"
+    },
+    "sky_color": 11810358,
+    "water_color": 11810358,
+    "water_fog_color": 11810358
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:spring_lava"
+    ],
+    [
+         "crystalborn:infernalcrystal_placed"
+    ],
+    []
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+    ],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "crystalborn:gemfang",
+        "maxCount": 5,
+        "minCount": 3,
+        "weight": 2
+      },
+      {
+        "type": "crystalborn:gemgrazer",
+        "maxCount": 5,
+        "minCount": 3,
+        "weight": 2
+      }
+    ],
+    "misc": [],
+    "monster": [
+
+    ],
+    "underground_water_creature": [
+    ],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 2.5
+}

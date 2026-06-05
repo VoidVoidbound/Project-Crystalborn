@@ -32,6 +32,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VOID_CRYSTAL.get());
         this.dropSelf(ModBlocks.CRACKED_OBSIDIAN.get());
         this.dropSelf(ModBlocks.TERRA_CRYSTAL.get());
+        this.dropSelf(ModBlocks.INFERNAL_CRYSTAL.get());
 
 //        this.add(ModBlocks.SAPPHIRE_ORE.get(),
 //                block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
@@ -102,6 +103,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 //
         this.dropSelf(ModBlocks.TERRACRYSTAL_SAPLING.get());
         this.dropSelf(ModBlocks.VOIDCRYSTAL_SAPLING.get());
+        this.dropSelf(ModBlocks.INFERNAL_CRYSTAL_SHARD.get());
 
     }
 

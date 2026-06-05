@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crystal_mixture": {
+    "has_bowl": {
       "conditions": {
         "items": [
           {
             "items": [
-              "crystalborn:crystal_mixture"
+              "minecraft:bowl"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_crystal_mixture",
+      "has_bowl",
       "has_the_recipe"
     ]
   ],

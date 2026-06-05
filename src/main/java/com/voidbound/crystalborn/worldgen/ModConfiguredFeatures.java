@@ -13,10 +13,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RootsBlock;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.SpringConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer;
@@ -28,10 +25,14 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTes
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
+import java.util.List;
+
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_LIQUID_VOID_KEY = registerKey("liquid_void");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> TERRACRYSTAL_TREE_KEY = registerKey("terracrystal_tree");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> INFERNALCRYSTAL_SPIRE_KEY = registerKey("infernalcrystal_spire");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> VOIDCRYSTAL_TREE_KEY = registerKey("voidcrystal_tree");
 
@@ -60,6 +61,16 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, INFERNALCRYSTAL_SPIRE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.INFERNAL_CRYSTAL.get()),
+                new DarkOakTrunkPlacer(5, 4, 5),
+
+                BlockStateProvider.simple(ModBlocks.INFERNAL_CRYSTAL.get()),
+                new BlobFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), 0),
+
+                new TwoLayersFeatureSize(1, 1, 1)).build(
+        ));
 
         register(context, VOIDCRYSTAL_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.END_STONE),

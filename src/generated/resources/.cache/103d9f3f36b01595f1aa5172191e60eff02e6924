@@ -1,8 +1,10 @@
-// 1.20.1	2026-06-01T11:16:44.3640849	Registries
+// 1.20.1	2026-06-05T10:56:13.8273328	Registries
 00d62aa5ad317f725e79241fb5c67f35bcd3e19c data/crystalborn/forge/biome_modifier/add_liquid_void.json
+7b1774b15438cb34b291455296a5422823bc119b data/crystalborn/worldgen/configured_feature/infernalcrystal_spire.json
 1d83fbe2397212752f533aa73ddf2d04e5789508 data/crystalborn/worldgen/configured_feature/liquid_void.json
 6ecd6ad0e73108ad5cd9a81b85a255a6f2de76f8 data/crystalborn/worldgen/configured_feature/terracrystal_tree.json
 4a471ded97e0497aa3ad395df1f7728de2c8954a data/crystalborn/worldgen/configured_feature/voidcrystal_tree.json
 369521a2db972a95f27834eb4a48a751a3e075ec data/crystalborn/worldgen/placed_feature/end_liquid_void_placed.json
+c8c1975370632c3141c6e602e89c479699e5d02f data/crystalborn/worldgen/placed_feature/infernalcrystal_placed.json
 b60e990c3eef79b7790dd7c962fc727bcf1e5575 data/crystalborn/worldgen/placed_feature/terracrystal_placed.json
 286058bacceea22cf1dbcf730056aaf08fb056c6 data/crystalborn/worldgen/placed_feature/voidcrystal_placed.json

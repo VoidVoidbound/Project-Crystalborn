@@ -24,6 +24,8 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> TERRACRYSTAL_PLACED_KEY = registerKey("terracrystal_placed");
 
+    public static final ResourceKey<PlacedFeature> INFERNALCRYSTAL_PLACED_KEY = registerKey("infernalcrystal_placed");
+
     public static final ResourceKey<PlacedFeature> VOIDCRYSTAL_PLACED_KEY = registerKey("voidcrystal_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -35,6 +37,10 @@ public class ModPlacedFeatures {
         register(context, TERRACRYSTAL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TERRACRYSTAL_TREE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.TERRACRYSTAL_SAPLING.get()));
+
+        register(context, INFERNALCRYSTAL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.INFERNALCRYSTAL_SPIRE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                        ModBlocks.INFERNAL_CRYSTAL_SHARD.get()));
 
         register(context, VOIDCRYSTAL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VOIDCRYSTAL_TREE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),

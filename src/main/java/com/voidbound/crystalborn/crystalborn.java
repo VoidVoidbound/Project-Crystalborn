@@ -16,10 +16,7 @@ import com.voidbound.crystalborn.ModLoot.ModLootModifiers;
 import com.voidbound.crystalborn.ModSounds.ModSounds;
 //import com.voidbound.crystalborn.util.ModWoodTypes;
 //import com.voidbound.crystalborn.ModVillagers.ModVillagers;
-import com.voidbound.crystalborn.worldgen.biome.ModBiomes;
-import com.voidbound.crystalborn.worldgen.biome.TerraCrystalHills;
-import com.voidbound.crystalborn.worldgen.biome.ModSurfaceRuleData;
-import com.voidbound.crystalborn.worldgen.biome.VoidCrystalForest;
+import com.voidbound.crystalborn.worldgen.biome.*;
 import com.voidbound.crystalborn.worldgen.tree.ModFoliagePlacers;
 import com.voidbound.crystalborn.worldgen.tree.ModTrunkPlacerTypes;
 import com.voidbound.crystalborn.ModEffects.ModEffects;
@@ -48,6 +45,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 import terrablender.api.EndBiomeRegistry;
+import terrablender.api.Region;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 
@@ -91,7 +89,9 @@ public class crystalborn {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             Regions.register(new TerraCrystalHills(new ResourceLocation(MOD_ID, "overworld_1"), 2));
-//            Regions.register(new VoidCrystalForest(new ResourceLocation(MOD_ID, "end_1"), 1));
+
+            Regions.register(new InfernalCrystalCaverns(new ResourceLocation(MOD_ID, "nether_1"), 2));
+//
             EndBiomeRegistry.registerHighlandsBiome(ModBiomes.VOIDCRYSTAL_FOREST, 1);
 
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRuleData.makeRules());

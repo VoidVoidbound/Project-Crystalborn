@@ -4,6 +4,7 @@ package com.voidbound.crystalborn.ModBlocks;
 import com.voidbound.crystalborn.ModBlocks.custom.LiquidVoidBlock;
 import com.voidbound.crystalborn.ModBlocks.custom.VoidCrystalSaplingBlock;
 import com.voidbound.crystalborn.ModItems.ModItems;
+import com.voidbound.crystalborn.worldgen.tree.InfernalCrystalShardGrower;
 import com.voidbound.crystalborn.worldgen.tree.TerraCrystalTreeGrower;
 import com.voidbound.crystalborn.crystalborn;
 import com.voidbound.crystalborn.worldgen.tree.VoidCrystalTreeGrower;
@@ -34,6 +35,9 @@ public static final RegistryObject<Block> CRACKED_OBSIDIAN = registerBlock("crac
     public static final RegistryObject<Block> TERRA_CRYSTAL = registerBlock("terra_crystal",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).lightLevel(state -> 15)) {
             });
+    public static final RegistryObject<Block> INFERNAL_CRYSTAL = registerBlock("infernal_crystal",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).lightLevel(state -> 15)) {
+            });
 
 //    liquids
         public static final RegistryObject<Block> LIQUIDVOID = registerBlock("liquidvoid",
@@ -48,6 +52,8 @@ public static final RegistryObject<Block> CRACKED_OBSIDIAN = registerBlock("crac
                             new VoidCrystalTreeGrower(),
                             BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
                     ));
+    public static final RegistryObject<Block> INFERNAL_CRYSTAL_SHARD = registerBlock("infernal_crystal_shard",
+            () -> new SaplingBlock(new InfernalCrystalShardGrower(), BlockBehaviour.Properties.copy(Blocks.WARPED_FUNGUS)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
